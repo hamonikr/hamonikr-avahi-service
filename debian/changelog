@@ -1,3 +1,10 @@
+hamonikr-avahi-service (1.1.0) jin; urgency=medium
+
+  * Fixed #1
+   - https://github.com/hamonikr/hamonikr-avahi-service/issues/1
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 07 Jun 2021 18:29:11 +0900
+
 hamonikr-avahi-service (1.0.0) jin; urgency=medium
 
   * Release for HamoniKR 4.0

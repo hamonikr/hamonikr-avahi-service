@@ -1,8 +1,13 @@
-#!/bin/sh
-set -e
+#!/bin/bash
 
 case "$1" in
     configure)
+
+        if [ -f "/etc/nsswitch.conf" ]; then
+            sed -i.bak '/hosts:/d' /etc/nsswitch.conf
+            echo "hosts:          files mdns4 mdns4_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] dns" | tee -a /etc/nsswitch.conf
+        fi
+
         systemctl restart avahi-daemon
     ;;
 
