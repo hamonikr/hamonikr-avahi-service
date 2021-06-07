@@ -1,0 +1,16 @@
+Source: hamonikr-avahi-service
+Section: net
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.1.4
+
+Package: hamonikr-avahi-service
+Architecture: all
+Depends: avahi-daemon
+Recommends: openssh-server, 
+            openssh-sftp-server,
+            avahi-ui-utils,
+            avahi-discover            
+Description: Avahi Service for HamoniKR
+ 로컬 네트워크에서 Avahi SSH, AFT 서비스를 제공하는 패키지.
