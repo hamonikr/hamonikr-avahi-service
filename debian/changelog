@@ -1,3 +1,10 @@
+hamonikr-avahi-service (1.1.1) jin; urgency=medium
+
+  * Update debian/control
+   - Add Depends
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Jun 2021 09:04:06 +0900
+
 hamonikr-avahi-service (1.0.0) jin; urgency=medium
 
   * Release for HamoniKR 4.0
