@@ -50,3 +50,27 @@ wget -qO- https://pkg.hamonikr.org/add-hamonikr.apt | sudo -E bash -
 # install
 sudo apt install hamonikr-avahi-service
 ```
+
+# FAQ
+
+1) ping <호스트명>.local 을 하면 다른 IP를 리턴하는 경우
+```
+dhcp 로 받은 dns 서버 정보를 사용하는 경우 정상적인 IP를 리턴하지 못하는 경우가 있습니다. DNS 서버 정보를 8.8.8.8 로 변경하세요.
+```
+
+2) 로컬 네트워크의 ssh 접속이 안되는 경우
+
+```
+ssh 서비스가 구동 중인지 확인하세요.
+만약 서비스가 구동되지 않으면 다음과 같이 ssh 서비스를 추가하세요.
+
+sudo apt install openssh-server
+```
+
+3) 로컬 네트워크의 시스템을 찾지 못하는 경우
+
+```
+방화벽에서 UDP 5353 포트를 허용해주세요
+
+sudo ufw allow 5353/udp
+```
