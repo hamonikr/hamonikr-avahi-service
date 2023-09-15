@@ -1,3 +1,9 @@
+hamonikr-avahi-service (1.2.0) stable; urgency=medium
+
+  * Release in ubuntu 22.04
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 15 Sep 2023 14:23:05 +0900
+
 hamonikr-avahi-service (1.1.1) jin; urgency=medium
 
   * Update debian/control
