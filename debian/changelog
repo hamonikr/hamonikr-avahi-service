@@ -1,3 +1,9 @@
+hamonikr-avahi-service (1.2.2) stable; urgency=medium
+
+  * Release for noble
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 31 Jul 2024 12:34:57 +0900
+
 hamonikr-avahi-service (1.2.1) stable; urgency=medium
 
   * Release for HamoniKR 7.0
